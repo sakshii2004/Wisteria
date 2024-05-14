@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="621.0" prefWidth="1125.0" stylesheets="@../utility/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.HomeController">
+   <left>
+      <SplitPane prefHeight="621.0" prefWidth="1128.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane layoutX="-17.0" layoutY="7.0" prefHeight="620.0" prefWidth="273.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="853.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="67.0" fitWidth="257.0" layoutX="10.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/Wisteria/src/application/images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="7.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleTimerButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="TIMER" />
+                        <Button layoutX="7.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleCalendarButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="CALENDAR" />
+                        <Button layoutX="7.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleGoalsButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="MONTHLY GOALS" />
+                        <Button layoutX="7.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleMakeJournalEntryButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="JOURNAL" />
+                        <Button layoutX="7.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleTodoButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="TO-DO LIST" />
+                        <Button layoutX="7.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleJournalButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="JOURNAL ENTRIES" />
+                        <Button layoutX="7.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleMyAccountButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="MY ACCOUNT" />
+                        <Button layoutX="7.0" layoutY="81.0" mnemonicParsing="false" onAction="#showHome" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="HOME">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="277.0" layoutY="-1.0" prefHeight="622.0" prefWidth="879.0">
+                     <children>
+                        <Label fx:id="dateDisplay" layoutX="616.0" layoutY="51.0" prefHeight="38.0" prefWidth="142.0" style="-fx-text-fill: #5B4196;" text="&lt;display date&gt;">
+                           <font>
+                              <Font name="Tw Cen MT" size="21.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="1.0" orientation="VERTICAL" prefHeight="621.0" prefWidth="0.0" />
+                        <AnchorPane layoutX="38.0" layoutY="194.0" prefHeight="388.0" prefWidth="366.0">
+                           <children>
+                              <ListView fx:id="toDoList" prefHeight="389.0" prefWidth="366.0" styleClass="list-cell" stylesheets="@../utility/application.css" />
+                           </children>
+                        </AnchorPane>
+                        <ImageView fitHeight="358.0" fitWidth="444.0" layoutX="492.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/LoginImage.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="helloText" layoutX="38.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HELLO XYZ!" wrappingWidth="785.3031005859375">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="39.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane layoutX="38.0" layoutY="138.0" prefHeight="34.0" prefWidth="124.0" style="-fx-background-color: #ba8feb;">
+                           <children>
+                              <Label layoutX="25.0" layoutY="1.0" prefHeight="32.0" prefWidth="82.0" text="Today" textFill="WHITE" textOverrun="CLIP">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="29.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="todayDate" layoutX="241.0" layoutY="142.0" prefHeight="32.0" prefWidth="167.0" text="29 Mar 2024" textAlignment="CENTER" textFill="#a75dcf" textOverrun="CLIP">
+                           <font>
+                              <Font name="Tw Cen MT" size="29.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="476.0" layoutY="251.0" prefHeight="34.0" prefWidth="330.0" style="-fx-background-color: #ba8feb;">
+                           <children>
+                              <Label layoutX="6.0" layoutY="1.0" prefHeight="32.0" prefWidth="321.0" text="You have been productive for:" textFill="WHITE" textOverrun="CLIP">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <ImageView fitHeight="182.0" fitWidth="359.0" layoutX="462.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/motivational-quote.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="timeProductive" alignment="CENTER" layoutX="545.0" layoutY="311.0" prefHeight="69.0" prefWidth="190.0" text="300 minutes" textAlignment="CENTER" textFill="#23012e">
+                           <font>
+                              <Font name="Tw Cen MT" size="32.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="97.0" fitWidth="368.0" layoutX="453.0" layoutY="300.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/focused-time-bg.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </left>
+</BorderPane>
