@@ -1,0 +1,136 @@
+.background {
+	-fx-background-color: white;
+}
+
+.login_button {
+    -fx-background-color: linear-gradient(to right, #ba8feb, #663399);
+    -fx-text-fill: white;
+    -fx-font-size: 19px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+.login_button:hover {
+    -fx-background-color: #B085CC; 
+}
+
+.lavender_button {
+    -fx-background-color: #ba8feb;
+    -fx-text-fill: white;
+    -fx-font-size: 19px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+
+.lavender_button:hover {
+    -fx-background-color: #B085CC; 
+}
+
+.transperant_button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ba8feb;
+    -fx-font-size: 13px;
+    -fx-padding: 5px 10px;
+    -fx-border-color: #ba8feb;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.transperant_button:hover {
+    -fx-background-color: #ebdff9;
+    -fx-text-fill: #ba8feb;
+    -fx-font-size: 13px;
+    -fx-padding: 5px 10px;
+    -fx-border-color: #ba8feb;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+
+.email-input {
+    -fx-background-color: white;
+    -fx-border-color: lavender;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: gray; /* Color of the placeholder text */
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+}
+
+.email-input:focused {
+    -fx-border-color: #5B4196;
+}
+
+
+.text-box {
+	-fx-font-size: 19px;
+}
+
+.text-box:focused {
+	-fx-border-color: #5B4196;
+}
+
+.password-input {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: lavender;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: gray; /* Color of the placeholder text */
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+}
+
+.password-input:focused {
+    -fx-border-color: #5B4196;
+}
+
+.welcome-text {
+    -fx-font-size: 25px;
+    -fx-fill: black; /* Text color */
+    -fx-font-weight: bold;
+}
+
+.taskdesc {
+	-fx-background-color: white;
+	-fx-border-color: lavender;
+}
+
+.taskdesc:focused {
+	-fx-border-color: #5B4196;
+}
+
+.priority {
+	-fx-background-color: white;
+	-fx-border-color: lavender;
+}
+
+.priority:focused {
+	-fx-border-color: #5B4196;
+}
+
+.datepicker {
+	-fx-background-color: white;
+	-fx-border-color: lavender;
+}
+
+.datepicker:focused {
+	-fx-border-color: #5B4196;
+}
+
+.list-cell {
+  -fx-font: 13pt "Tw Cen MT";
+}
+
+.list-cell:focused {
+    -fx-border-color: #ba8feb;
+}
+
+
+.box {
+  -fx-padding: 1px;
+}
