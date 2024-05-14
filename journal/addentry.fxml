@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="621.0" prefWidth="1125.0" stylesheets="@../utility/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="journal.EntryController">
+   <left>
+      <SplitPane prefHeight="621.0" prefWidth="1128.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane layoutX="-17.0" layoutY="7.0" prefHeight="620.0" prefWidth="273.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="853.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="67.0" fitWidth="257.0" layoutX="10.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="timerButton" layoutX="7.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleTimerButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="TIMER" />
+                        <Button fx:id="calendarButton" layoutX="7.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleCalendarButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="CALENDAR" />
+                        <Button fx:id="goalsButton" layoutX="7.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleGoalsButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="MONTHLY GOALS" />
+                        <Button fx:id="weeklyPlannerButton" layoutX="7.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleMakeJournalEntryButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="JOURNAL" />
+                        <Button fx:id="toDoListButton" layoutX="7.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleTodoButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="TO-DO LIST" />
+                        <Button fx:id="journalEntriesButton" layoutX="7.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleJournalButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="JOURNAL ENTRIES" />
+                        <Button layoutX="7.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleMyAccountButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="MY ACCOUNT" />
+                        <Button fx:id="homeButton" layoutX="7.0" layoutY="81.0" mnemonicParsing="false" onAction="#showHome" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="HOME">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="277.0" layoutY="-1.0" prefHeight="622.0" prefWidth="879.0">
+                     <children>
+                        <Separator layoutX="1.0" orientation="VERTICAL" prefHeight="621.0" prefWidth="0.0" />
+                        <ImageView fitHeight="358.0" fitWidth="444.0" layoutX="492.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/LoginImage.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="97.0" fitWidth="368.0" layoutX="39.0" layoutY="29.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/focused-time-bg.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#d099ea" layoutX="126.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JOURNAL" wrappingWidth="208.5030517578125">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="39.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="128.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JOURNAL" wrappingWidth="208.5030517578125">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="39.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane layoutX="40.0" layoutY="211.0" prefHeight="374.0" prefWidth="790.0">
+                           <children>
+                              <TextField fx:id="subjectField" layoutX="1.0" layoutY="37.0" prefHeight="43.0" prefWidth="680.0" styleClass="email-input" stylesheets="@../utility/application.css" />
+                              <Label layoutX="4.0" layoutY="1.0" prefHeight="32.0" prefWidth="246.0" text="Subject" textOverrun="CLIP">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="4.0" layoutY="97.0" prefHeight="32.0" prefWidth="246.0" text="Entry" textOverrun="CLIP">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="26.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="entryArea" layoutX="1.0" layoutY="144.0" prefHeight="160.0" prefWidth="680.0" styleClass="text-box" stylesheets="@../utility/application.css" />
+                              <Button fx:id="saveButton" layoutX="2.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="36.0" prefWidth="97.0" styleClass="lavender_button" stylesheets="@../utility/application.css" text="Save" textFill="WHITE">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="114.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="48.0" prefWidth="102.0" styleClass="lavender_button" stylesheets="@../utility/application.css" text="Cancel" textFill="WHITE">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="13.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="45.0" layoutY="151.0" prefHeight="34.0" prefWidth="250.0" style="-fx-background-color: #ba8feb;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="5.0" layoutY="1.0" prefHeight="32.0" prefWidth="241.0" text="Write a Journal Entry" textFill="WHITE" textOverrun="CLIP">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </left>
+</BorderPane>
