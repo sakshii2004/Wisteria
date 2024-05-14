@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="621.0" prefWidth="1125.0" stylesheets="@../utility/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monthlytask.MonthlyTaskController">
+   <left>
+      <SplitPane prefHeight="621.0" prefWidth="1128.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane layoutX="-17.0" layoutY="7.0" prefHeight="620.0" prefWidth="273.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="853.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="67.0" fitWidth="257.0" layoutX="10.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="timerButton" layoutX="7.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleTimerButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="TIMER" />
+                        <Button fx:id="calendarButton" layoutX="7.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleCalendarButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="CALENDAR" />
+                        <Button fx:id="goalsButton" layoutX="7.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleGoalsButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="MONTHLY GOALS" />
+                        <Button layoutX="7.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleMakeJournalEntryButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="JOURNAL" />
+                        <Button fx:id="toDoListButton" layoutX="7.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleTodoButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="TO-DO LIST" />
+                        <Button fx:id="journalEntriesButton" layoutX="7.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleJournalButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="JOURNAL ENTRIES" />
+                        <Button layoutX="7.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleMyAccountButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="MY ACCOUNT" />
+                        <Button fx:id="homeButton" layoutX="7.0" layoutY="81.0" mnemonicParsing="false" onAction="#showHome" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="HOME">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="277.0" layoutY="-1.0" prefHeight="622.0" prefWidth="879.0">
+                     <children>
+                        <Label fx:id="dateDisplay" layoutX="616.0" layoutY="51.0" prefHeight="38.0" prefWidth="142.0" style="-fx-text-fill: #5B4196;" text="&lt;display date&gt;">
+                           <font>
+                              <Font name="Tw Cen MT" size="21.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="1.0" orientation="VERTICAL" prefHeight="621.0" prefWidth="0.0" />
+                        <ImageView fitHeight="358.0" fitWidth="444.0" layoutX="492.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/LoginImage.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="monthYearDisplay" alignment="CENTER" layoutX="93.0" layoutY="146.0" prefHeight="32.0" prefWidth="260.0" text="Test 2024" textFill="#a75dcf" textOverrun="CLIP">
+                           <font>
+                              <Font name="Tw Cen MT" size="29.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="97.0" fitWidth="368.0" layoutX="39.0" layoutY="29.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/focused-time-bg.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#d099ea" layoutX="54.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MONTHLY GOALS" wrappingWidth="319.7030029296875">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="39.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="56.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MONTHLY GOALS" wrappingWidth="323.70306396484375">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="39.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="previousMonth" layoutX="39.0" layoutY="138.0" mnemonicParsing="false" onAction="#goToPreviousMonth" styleClass="lavender_button" stylesheets="@../utility/application.css" text="&lt;">
+                           <font>
+                              <Font name="System Bold" size="58.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane layoutX="29.0" layoutY="211.0" prefHeight="327.0" prefWidth="396.0">
+                           <children>
+                              <TableView fx:id="tableMonthlyGoals" prefHeight="337.0" prefWidth="390.0" styleClass="list-cell" stylesheets="@../utility/application.css">
+                                <columns>
+                                  <TableColumn fx:id="goalNameColumn" prefWidth="272.79998779296875" text="Goal" />
+                                  <TableColumn fx:id="priorityColumn" prefWidth="99.20001220703125" text="Priority" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="nextMonth" layoutX="354.0" layoutY="138.0" mnemonicParsing="false" onAction="#goToNextMonth" styleClass="lavender_button" stylesheets="@../utility/application.css" text="&gt;">
+                           <font>
+                              <Font name="Tw Cen MT Bold" size="9.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane layoutX="468.0" layoutY="168.0" prefHeight="418.0" prefWidth="340.0">
+                           <children>
+                              <TextArea fx:id="goalDesc" layoutX="20.0" layoutY="147.0" prefHeight="58.0" prefWidth="302.0" styleClass="taskdesc" stylesheets="@../utility/application.css" />
+                              <TextField fx:id="goalTitle" layoutX="20.0" layoutY="73.0" prefHeight="36.0" prefWidth="302.0" style="-fx-background-color: white;" styleClass="email-input" stylesheets="@../utility/application.css" />
+                              <ChoiceBox fx:id="goalPriority" layoutX="20.0" layoutY="240.0" prefHeight="35.0" prefWidth="298.0" styleClass="priority" stylesheets="@../utility/application.css" />
+                              <Label layoutX="23.0" layoutY="46.0" prefHeight="27.0" prefWidth="297.0" text="Goal">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="21.0" layoutY="119.0" prefHeight="27.0" prefWidth="298.0" text="Description">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="21.0" layoutY="213.0" prefHeight="27.0" prefWidth="294.0" text="Priority">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="21.0" layoutY="282.0" prefHeight="27.0" prefWidth="150.0" text="Month">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="23.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="23.0" prefHeight="34.0" prefWidth="295.0" style="-fx-background-color: #ba8feb;">
+                                 <children>
+                                    <Label layoutX="25.0" layoutY="2.0" prefHeight="32.0" prefWidth="245.0" text="Create a Monthly Goal" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+                                       <font>
+                                          <Font name="Tw Cen MT" size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Button fx:id="addGoalButton" layoutX="20.0" layoutY="364.0" mnemonicParsing="false" onAction="#addGoal" prefHeight="47.0" prefWidth="300.0" styleClass="lavender_button" stylesheets="@../utility/application.css" text="ADD GOAL">
+                                 <font>
+                                    <Font name="Tw Cen MT Condensed Extra Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <ChoiceBox fx:id="goalMonth" layoutX="20.0" layoutY="309.0" prefHeight="36.0" prefWidth="150.0" styleClass="priority" stylesheets="@../utility/application.css" />
+                              <Label layoutX="183.0" layoutY="284.0" prefHeight="27.0" prefWidth="134.0" text="Year">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="23.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="goalYear" layoutX="182.0" layoutY="311.0" prefHeight="36.0" prefWidth="136.0" styleClass="priority" stylesheets="@../utility/application.css" />
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="deleteTaskButton" layoutX="237.0" layoutY="571.0" mnemonicParsing="false" onAction="#deleteTask" prefHeight="34.0" prefWidth="167.0" styleClass="transperant_button" stylesheets="@../utility/application.css" text="DELETE GOAL">
+                           <font>
+                              <Font name="Tw Cen MT Condensed Extra Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="viewTaskButton" layoutX="43.0" layoutY="571.0" mnemonicParsing="false" onAction="#viewTask" prefHeight="34.0" prefWidth="154.0" styleClass="transperant_button" stylesheets="@../utility/application.css" text="VIEW GOAL">
+                           <font>
+                              <Font name="Tw Cen MT Condensed Extra Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </left>
+</BorderPane>
