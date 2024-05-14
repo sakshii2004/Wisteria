@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="621.0" prefWidth="1125.0" stylesheets="@../utility/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calendar.CalendarController">
+   <left>
+      <SplitPane prefHeight="621.0" prefWidth="1128.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane layoutX="-17.0" layoutY="7.0" prefHeight="620.0" prefWidth="273.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="853.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="67.0" fitWidth="257.0" layoutX="10.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="7.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleTimerButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="TIMER" />
+                        <Button layoutX="7.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleCalendarButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="CALENDAR" />
+                        <Button layoutX="7.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleGoalsButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="MONTHLY GOALS" />
+                        <Button layoutX="7.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleMakeJournalEntryButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="JOURNAL" />
+                        <Button layoutX="7.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleTodoButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="TO-DO LIST" />
+                        <Button layoutX="7.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleJournalButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="JOURNAL ENTRIES" />
+                        <Button layoutX="7.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleMyAccountButton" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="MY ACCOUNT" />
+                        <Button layoutX="7.0" layoutY="81.0" mnemonicParsing="false" onAction="#showHome" prefHeight="49.0" prefWidth="262.0" styleClass="login_button" stylesheets="@../utility/application.css" text="HOME">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="277.0" layoutY="-1.0" prefHeight="622.0" prefWidth="879.0">
+                     <children>
+                        <Separator layoutX="1.0" orientation="VERTICAL" prefHeight="621.0" prefWidth="0.0" />
+                        <AnchorPane layoutX="33.0" prefHeight="526.0" prefWidth="744.0" style="-fx-background-color: White;">
+                           <children>
+                              <FlowPane fx:id="calendar" hgap="10.0" layoutX="14.0" layoutY="122.0" prefHeight="498.0" prefWidth="716.0" vgap="5.0" />
+                              <HBox alignment="CENTER" layoutX="259.0" layoutY="44.0" prefHeight="44.0" prefWidth="227.0" spacing="5.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#backOneMonth" style="-fx-background-color: lavender;" text="&lt;" />
+                                    <Text fx:id="year" strokeType="OUTSIDE" strokeWidth="0.0" text="####">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="month" strokeType="OUTSIDE" strokeWidth="0.0" text="####">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Text>
+                                    <Button mnemonicParsing="false" onAction="#forwardOneMonth" style="-fx-background-color: lavender;" text="&gt;" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" layoutX="14.0" layoutY="87.0" prefHeight="44.0" prefWidth="716.0" spacing="88.75">
+                                 <children>
+                                    <Text fill="#057232" strokeType="OUTSIDE" strokeWidth="0.0" text="SUN" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#057232" layoutX="213.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MON" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#057232" layoutX="222.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TUE" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#057232" layoutX="232.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WED" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#057232" layoutX="241.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THU" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#057232" layoutX="251.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FRI" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#057232" layoutX="266.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAT" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets right="9.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <ImageView fitHeight="58.0" fitWidth="368.0" layoutX="39.0" layoutY="29.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/hp/Desktop/Wisteria/WisteriaApplication/src/utility/images/focused-time-bg.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#d099ea" layoutX="54.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CALENDAR" wrappingWidth="208.5030517578125">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="39.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="56.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CALENDAR" wrappingWidth="208.5030517578125">
+                           <font>
+                              <Font name="Segoe UI Emoji" size="39.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </left>
+</BorderPane>
