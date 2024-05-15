@@ -22,6 +22,10 @@ Just like the Wisteria flower, our application aims to help you flourish on your
 ## Database Schema
 ![Untitled design (6)](https://github.com/sakshii2004/Wisteria/assets/124381306/d5438f02-b978-41d1-a6f9-fd90147db8bb)
 
+## Homepage of the Application
+The homepage is customized for every user. It displays a personalized welcome message, the tasks pertaining to that day for the user and the minutes the user has been productive that day.
+![image](https://github.com/sakshii2004/Wisteria/assets/124381306/e951fbd1-acfa-411a-9eb9-9bab193fb37c)
+
 ## Link to Project Demo
 https://www.kapwing.com/videos/66437dbc58ef0e615cf5538c
 
