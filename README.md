@@ -29,7 +29,7 @@ An overview of all the packages:
 - **home**: contains the java classes responsible for rendering the homepage.
 - **journal**: contains the java classes responsible for the journal aspect of the application: adding journal entries, viewing journal entries etc.
 - **monthlytask**: contains the java classes responsible for setting, viewing, deleting monthly goals.
-- **myaccount**: contains the java classes that enable to user to view their account details, as well as, update their passwords. Also incorporates a custom exception.
+- **myaccount**: contains the java classes that enable to user to view their account details, as well as, update their passwords. Also incorporates a [custom exception](#Custom-Exception).
 - **tasks**: package containing the classes that are the blueprint of all task objects, be it monthly or daily.
 - **timer**: contains the java classes responsible for timer functionality: set the timer while you do the task and the timer runs in the background.
 - **utility**: contains the miscellenous java classes that aid in various other classes.
