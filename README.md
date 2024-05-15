@@ -44,7 +44,8 @@ An overview of all the packages:
 ![Untitled design (6)](https://github.com/sakshii2004/Wisteria/assets/124381306/d5438f02-b978-41d1-a6f9-fd90147db8bb)
 
 ## Homepage of the Application
-The homepage is customized for every user. It displays a personalized welcome message, the tasks pertaining to that day for the user and the minutes the user has been productive that day.
+The homepage is customized for each user. It displays a personalized welcome message, the tasks pertaining to that day for the user and the minutes the user has been productive on that day.
+
 ![image](https://github.com/sakshii2004/Wisteria/assets/124381306/e951fbd1-acfa-411a-9eb9-9bab193fb37c)
 
 ## Link to Project Demo
