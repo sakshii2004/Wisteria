@@ -34,8 +34,8 @@ An overview of all the packages:
 - **timer**: contains the java classes responsible for timer functionality: set the timer while you do the task and the timer runs in the background.
 - **utility**: contains the miscellenous java classes that aid in various other classes.
 
-Custom Exception:
-- MyAccountException: Custom exception thrown when any error occurs while fetching the account details for My Account page.
+#### Custom Exception:
+- **MyAccountException**: Custom exception thrown when any error occurs while fetching the account details for My Account page.
 
 ## Class Diagram
 ![CDW1](https://github.com/sakshii2004/Wisteria/assets/124381306/15468301-0684-4ce4-ac3f-3d5466d75b29)
