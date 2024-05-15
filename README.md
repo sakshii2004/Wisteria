@@ -23,7 +23,7 @@ An overview of all the packages:
 
 - **application**: contains the main.java which is the entry point of the application. It renders the login page.
 - **authentication**: contains java classes responsible for the register and login functionalities.
-- **base**: contains the base java classes like DB.java, SceneController.java that other classes extend. (see class diagram)
+- **base**: contains the base java classes like DB.java, SceneController.java that other classes extend. [See class diagram](#-Class-Diagram)
 - **calender**: contains the java classes responsible for the calendar functionality.
 - **dailytask**: contains the java classes responsible for the daily to-do list functionality: add daily task, view task, delete task etc.
 - **home**: contains the java classes responsible for rendering the homepage.
