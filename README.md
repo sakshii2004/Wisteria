@@ -16,6 +16,24 @@ Just like the Wisteria flower, our application aims to help you flourish on your
 - Daily To-Do List: Create and manage your daily to-do lists, prioritizing tasks and ensuring nothing falls through the cracks.
 - Journaling: Write journal entries to reflect on your progress, challenges and learnings.
 
+## Functionalities
+All the different functionalities are separated into different packages with each package containing the FXML file responsible for the aesthetic front-end, a controller class, a database class which talks to the database for the controller class and other necessary class files. If a feature has multiple UIs, then the package contains more than one FXML file and controller class. 
+
+An overview of all the packages: 
+
+- **application**: contains the main.java which is the entry point of the application. It renders the login page.
+- **authentication**: contains java classes responsible for the register and login functionalities.
+- **base**: contains the base java classes like DB.java, SceneController.java that other classes extend. (see class diagram)
+- **calender**: contains the java classes responsible for the calendar functionality.
+- **dailytask**: contains the java classes responsible for the daily to-do list functionality: add daily task, view task, delete task etc.
+- **home**: contains the java classes responsible for rendering the homepage.
+- **journal**: contains the java classes responsible for the journal aspect of the application: adding journal entries, viewing journal entries etc.
+- **monthlytask**: contains the java classes responsible for setting, viewing, deleting monthly goals.
+- **myaccount**: contains the java classes that enable to user to view their account details, as well as, update their passwords. Also incorporates a custom exception.
+- **tasks**: package containing the classes that are the blueprint of all task objects, be it monthly or daily.
+- **timer**: contains the java classes responsible for timer functionality: set the timer while you do the task and the timer runs in the background.
+- **utility**: contains the miscellenous java classes that aid in various other classes.
+
 ## Class Diagram
 ![CDW1](https://github.com/sakshii2004/Wisteria/assets/124381306/15468301-0684-4ce4-ac3f-3d5466d75b29)
 
