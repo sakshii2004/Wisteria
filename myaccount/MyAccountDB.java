@@ -27,7 +27,8 @@ public class MyAccountDB extends DB {
             }	            
         } 		
         catch (SQLException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+	    throw new MyAccountException("Error fetching user name", e);
         }	
 		
 		return name;    
@@ -45,7 +46,8 @@ public class MyAccountDB extends DB {
             }	            
         } 		
         catch (SQLException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+		throw new MyAccountException("Error fetching user email", e);
         }
 		
 		return email;    
@@ -64,7 +66,8 @@ public class MyAccountDB extends DB {
             }	            
         } 		
         catch (SQLException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+		throw new MyAccountException("Error fetching user date of birth", e);
         }
 		
 		return dob.toString();    
@@ -88,7 +91,7 @@ public class MyAccountDB extends DB {
         } 
 		
         catch (SQLException e) {
-            Utility.showAlert("Error", "Some error has occured.");
+            throw new MyAccountException("Error checking password", e);
             return correctPassword;	
         }
 		
@@ -114,7 +117,7 @@ public class MyAccountDB extends DB {
 		
 		catch (SQLException e) {
 	        //e.printStackTrace();
-	        Utility.showAlert("Error", "Sorry. Password could not be updated.");
+	        throw new MyAccountException("Sorry. Password could not be updated.", e);
 	    }
 	}
 
