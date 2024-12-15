@@ -49,7 +49,7 @@ The homepage is customized for each user. It displays a personalized welcome mes
 ![image](https://github.com/sakshii2004/Wisteria/assets/124381306/e951fbd1-acfa-411a-9eb9-9bab193fb37c)
 
 ## Link to Project Demo
-https://www.kapwing.com/videos/66437dbc58ef0e615cf5538c
+https://vimeo.com/1039396753?share=copy
 
 ## Know more about Wisteria
 https://www.canva.com/design/DAGBFNm5OcA/r6FdkeXvofQnh1rI-H2a6g/view?utm_content=DAGBFNm5OcA&utm_campaign=designshare&utm_medium=link&utm_source=editor
